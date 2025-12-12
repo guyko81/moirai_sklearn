@@ -15,7 +15,9 @@ pip install moirai_sklearn
 ```
 
 Or from source:
+
 ```bash
+git clone https://github.com/guyko81/moirai_sklearn.git
 cd moirai_sklearn
 pip install -e .
 ```

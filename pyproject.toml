@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "moirai_sklearn"
-version = "0.1.0"
+version = "0.1.1"
 description = "A scikit-learn-like interface for Moirai time series forecasting using native quantile outputs"
 readme = "README.md"
 license = {text = "Apache-2.0"}
@@ -28,7 +28,7 @@ dependencies = [
     "numpy>=1.21",
     "pandas>=1.3",
     "torch>=2.0",
-    "uni2ts @ git+https://github.com/SalesforceAIResearch/uni2ts.git",
+    "uni2ts>=2.0.0",
 ]
 
 [project.optional-dependencies]
