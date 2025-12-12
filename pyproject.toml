@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moirai_sklearn"
+version = "0.1.0"
+description = "A scikit-learn-like interface for Moirai time series forecasting using native quantile outputs"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.9"
+keywords = ["time-series", "forecasting", "machine-learning", "moirai", "distribution"]
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.3",
+    "torch>=2.0",
+    "uni2ts @ git+https://github.com/SalesforceAIResearch/uni2ts.git",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/guyko81/moirai_sklearn"
+Documentation = "https://github.com/guyko81/moirai_sklearn#readme"
+Repository = "https://github.com/guyko81/moirai_sklearn"
+
+[tool.setuptools]
+packages = ["moirai_sklearn"]
+package-dir = {"moirai_sklearn" = "."}
+
