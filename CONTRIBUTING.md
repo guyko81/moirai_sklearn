@@ -51,4 +51,4 @@ Please use the GitHub issue tracker to report bugs or suggest features. Include:
 
 ## Questions?
 
-Feel free to open an issue for questions or discussions!
+Feel free to open an issue for questions, or discussions!
