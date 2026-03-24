@@ -64,7 +64,7 @@ class MoiraiForecaster:
     def _ensure_model_loaded(self, horizon: int):
         """Lazy load the model on first use."""
         if self._model is None or self._model.hparams.prediction_length != horizon:
-            from uni2ts.model.moirai2 import Moirai2Forecast, Moirai2Module
+            from ._vendor import Moirai2Forecast, Moirai2Module
             
             if self._module is None:
                 self._module = Moirai2Module.from_pretrained(self.model_name)
